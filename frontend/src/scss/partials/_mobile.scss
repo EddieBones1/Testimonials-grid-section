@@ -1,0 +1,24 @@
+//Mobile Styles
+body {
+  background-color: $Light-grayish-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 24rem;
+  max-height: 122rem;
+  padding: 4.44rem 1.5rem;
+}
+
+.article {
+  border-radius: 0.5rem;
+  width: 20rem;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
