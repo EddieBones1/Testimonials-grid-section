@@ -12,9 +12,84 @@ body {
 
 .article {
   border-radius: 0.5rem;
-  width: 20rem;
+  width: 20.4375rem;
+  padding-inline: 2rem;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
 }
+.article-img {
+  background-color: yellow;
+  margin-top: 1.63rem;
+  border-radius: 1.75rem;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.article h1 {
+  color: $White;
+  font-family: "Barlow-medium", sans-serif;
+  font-size: $Name-fs;
+  line-height: $lh-1;
+}
+
+.article span {
+  font-family: "Barlow-medium", sans-serif;
+  color: $White;
+  opacity: 0.5;
+  font-size: $Title-fs;
+  line-height: $lh-2;
+}
+.quotes {
+  position: relative;
+  top: -3.75rem;
+  left: 14.375rem;
+  bottom: 21.38rem;
+  z-index: 0;
+  opacity: 70%;
+  flex-shrink: 0;
+}
+
+.user-details {
+  gap: 0.25rem;
+  padding-top: 29px;
+  padding-left: 10px;
+}
+h2 {
+  background-color: red;
+  color: $White;
+  font-family: "Barlow-semibold", sans-serif;
+  font-size: $Text-fs;
+  line-height: normal;
+  padding-bottom: 2.5rem;
+  width: 17rem;
+}
+
+.article-1 /*Daniel's article*/ {
+  background-color: $Violet;
+}
+.article-2 /*Jonathan's article*/ {
+  background-color: $Very-dark-grayish-blue;
+}
+.article-3 /*Jeanette's article*/ {
+  background-color: $White;
+}
+.article-4 /*Patrick's article*/ {
+  background-color: $Very-dark-blackish-blue;
+}
+.article-5 /*Kira's article*/ {
+  background-color: $White;
+}
+.article-1,
+.article-2,
+.article-3,
+.article-4,
+.article-5 {
+  margin-bottom: 1.5rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
