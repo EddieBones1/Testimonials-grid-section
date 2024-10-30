@@ -1,27 +1,36 @@
 //Mobile Styles
+@import "variables";
 body {
-  background-color: $Light-grayish-blue;
+  background-color: $light-grayish-blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transform: translate(-50% -50%);
   align-items: center;
-  max-width: 24rem;
-  max-height: 122rem;
+  width: 24rem;
+  height: 122rem;
   padding: 4.44rem 1.5rem;
 }
 
 .article {
   border-radius: 0.5rem;
-  width: 20.4375rem;
+  max-width: 20.4375rem;
   padding-inline: 2rem;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
 }
 .article-img {
-  background-color: yellow;
   margin-top: 1.63rem;
   border-radius: 1.75rem;
   width: 1.75rem;
   height: 1.75rem;
+}
+.verified-graduate {
+  border-radius: 1.75rem;
+  border: 2px solid $light-violet;
+}
+.verified-graduate-2 {
+  border-radius: 1.75rem;
+  border: 2px solid $violet;
 }
 .user-info {
   display: flex;
@@ -29,23 +38,23 @@ body {
 }
 
 .article h1 {
-  color: $White;
+  color: $white;
   font-family: "Barlow-medium", sans-serif;
-  font-size: $Name-fs;
+  font-size: $fs-1;
   line-height: $lh-1;
 }
 
 .article span {
   font-family: "Barlow-medium", sans-serif;
-  color: $White;
+  color: $white;
   opacity: 0.5;
-  font-size: $Title-fs;
+  font-size: $fs-2;
   line-height: $lh-2;
 }
-.quotes {
+.quotation-mark {
   position: relative;
   top: -3.75rem;
-  left: 14.375rem;
+  left: 11.375rem;
   bottom: 21.38rem;
   z-index: 0;
   opacity: 70%;
@@ -58,42 +67,23 @@ body {
   padding-left: 10px;
 }
 h2 {
-  background-color: red;
-  color: $White;
+  color: $white;
   font-family: "Barlow-semibold", sans-serif;
-  font-size: $Text-fs;
+  font-size: $fs-3;
   line-height: normal;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 1.2rem;
   width: 17rem;
 }
+.quote {
+  font-family: "Barlow-medium", sans-serif;
+  font-size: $fs-1;
+  line-height: $lh-3;
+  max-width: 16.4375rem;
+}
+//////////////////////////Articles//////////////////////////
+@import "articles";
 
-.article-1 /*Daniel's article*/ {
-  background-color: $Violet;
-}
-.article-2 /*Jonathan's article*/ {
-  background-color: $Very-dark-grayish-blue;
-}
-.article-3 /*Jeanette's article*/ {
-  background-color: $White;
-}
-.article-4 /*Patrick's article*/ {
-  background-color: $Very-dark-blackish-blue;
-}
-.article-5 /*Kira's article*/ {
-  background-color: $White;
-}
-.article-1,
-.article-2,
-.article-3,
-.article-4,
-.article-5 {
-  margin-bottom: 1.5rem;
-}
+//////////////////////////Attribution//////////////////////////
+@import "attribution";
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
