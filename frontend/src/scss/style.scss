@@ -1,6 +1,149 @@
-@forward "./partials/boilerplate";
-@forward "./partials/fonts";
-@forward "./partials/variables";
-@forward "./partials/mobile";
-@forward "./partials/desktop";
-@forward "./partials/attribution";
+//Mobile Styles
+@use "./partials/" as v;
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: v.$light-grayish-blue;
+  padding: 4.44rem 1.5rem;
+  height: auto;
+  width: 24rem;
+}
+.desktop-grid {
+  display: grid;
+  grid-row-start: 1;
+  gap: 1.5rem;
+}
+.article {
+  //all of the articles//
+  width: 80%;
+  border-radius: 0.5rem;
+  padding-inline: 2rem;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+}
+.article-img {
+  margin-top: 1.63rem;
+  border-radius: 1.75rem;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.verified-graduate {
+  border-radius: 1.75rem;
+  border: 2px solid v.$light-violet;
+}
+.verified-graduate-2 {
+  border-radius: 1.75rem;
+  border: 2px solid v.$violet;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.user-details {
+  gap: 0.25rem;
+  padding-top: 29px;
+  padding-left: 10px;
+}
+//Articles//
+.article:nth-of-type(1) {
+  //Daniel's article//
+  display: grid;
+  background-color: v.$violet;
+  h1 {
+    color: v.$white;
+  }
+  span {
+    color: v.$white;
+  }
+  .quotation-mark {
+    position: fixed;
+    bottom: 11.88rem;
+    right: 7.13rem;
+    left: 15.69rem;
+    top: 4.5rem;
+    z-index: 0;
+    opacity: 70%;
+  }
+  h2 {
+    grid-row: 2/3;
+    position: relative;
+  }
+  .quote {
+    color: v.$white;
+    margin-bottom: 2rem;
+  }
+}
+.article:nth-of-type(2) {
+  //Jonathan's article//
+  background-color: v.$very-dark-grayish-blue;
+  h1 {
+    color: v.$white;
+  }
+  span {
+    color: v.$white;
+  }
+  h2 {
+    width: 16.4rem;
+  }
+  .quote {
+    color: v.$white;
+  }
+}
+.article:nth-of-type(3) {
+  //Jeanette's article//
+  background-color: v.$white;
+  h1 {
+    color: v.$very-dark-grayish-blue;
+  }
+  span {
+    color: v.$very-dark-grayish-blue;
+  }
+  h2 {
+    color: v.$very-dark-grayish-blue;
+  }
+  .quote {
+    opacity: 0.7;
+  }
+}
+.article:nth-of-type(4) {
+  //Patrick's article//
+  background-color: v.$very-dark-blackish-blue;
+  h1 {
+    color: v.$white;
+  }
+  span {
+    color: v.$white;
+  }
+  .quote {
+    color: v.$white;
+  }
+}
+.article:nth-of-type(5) {
+  //Kira's article//
+  background-color: v.$white;
+  h1 {
+    color: v.$very-dark-grayish-blue;
+  }
+  span {
+    color: v.$very-dark-grayish-blue;
+  }
+  h2 {
+    color: v.$very-dark-grayish-blue;
+  }
+  .quote {
+    color: v.$very-dark-grayish-blue;
+  }
+}
+
+//Attribution//
+.attribution {
+  margin-top: 1.5rem;
+  align-items: center;
+  font-size: 0.6875rem;
+  justify-content: center;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
