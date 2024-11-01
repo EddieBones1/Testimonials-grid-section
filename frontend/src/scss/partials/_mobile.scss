@@ -1,11 +1,12 @@
 //Mobile Styles
-@import "variables";
+@use "variables" as v;
+@use "articles";
+@use "attribution";
 body {
-  background-color: $light-grayish-blue;
+  background-color: v.$light-grayish-blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translate(-50% -50%);
   align-items: center;
   width: 24rem;
   height: 122rem;
@@ -14,7 +15,6 @@ body {
 
 .article {
   border-radius: 0.5rem;
-  max-width: 20.4375rem;
   padding-inline: 2rem;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
 }
@@ -26,11 +26,11 @@ body {
 }
 .verified-graduate {
   border-radius: 1.75rem;
-  border: 2px solid $light-violet;
+  border: 2px solid v.$light-violet;
 }
 .verified-graduate-2 {
   border-radius: 1.75rem;
-  border: 2px solid $violet;
+  border: 2px solid v.$violet;
 }
 .user-info {
   display: flex;
@@ -38,19 +38,18 @@ body {
 }
 
 .article h1 {
-  color: $white;
   font-family: "Barlow-medium", sans-serif;
-  font-size: $fs-1;
-  line-height: $lh-1;
+  font-size: v.$fs-1;
+  line-height: v.$lh-1;
 }
 
 .article span {
   font-family: "Barlow-medium", sans-serif;
-  color: $white;
   opacity: 0.5;
-  font-size: $fs-2;
-  line-height: $lh-2;
+  font-size: v.$fs-2;
+  line-height: v.$lh-2;
 }
+
 .quotation-mark {
   position: relative;
   top: -3.75rem;
@@ -67,9 +66,9 @@ body {
   padding-left: 10px;
 }
 h2 {
-  color: $white;
+  color: v.$white;
   font-family: "Barlow-semibold", sans-serif;
-  font-size: $fs-3;
+  font-size: v.$fs-3;
   line-height: normal;
   padding-bottom: 1.5rem;
   margin-top: 1.2rem;
@@ -77,13 +76,11 @@ h2 {
 }
 .quote {
   font-family: "Barlow-medium", sans-serif;
-  font-size: $fs-1;
-  line-height: $lh-3;
-  max-width: 16.4375rem;
+  font-size: v.$fs-1;
+  line-height: v.$lh-3;
+  width: 16.4375rem;
 }
-//////////////////////////Articles//////////////////////////
-@import "articles";
 
-//////////////////////////Attribution//////////////////////////
-@import "attribution";
+//Articles//
 
+//Attribution//

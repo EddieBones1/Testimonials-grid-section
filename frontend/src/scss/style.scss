@@ -1,4 +1,6 @@
 @forward "./partials/boilerplate";
 @forward "./partials/fonts";
+@forward "./partials/variables";
+@forward "./partials/mobile";
 @forward "./partials/desktop";
-@import "./partials/mobile";
+@forward "./partials/attribution";

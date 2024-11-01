@@ -1,10 +1,10 @@
 // Order of articles//
-// article-1 = Daniel's article
-// article-2 = Jonathan's article
-// article-3 = Jeanette's article
-// article-4 = Patrick's article
-// article-5 = Kira's article
-
+// article-1 = Daniel's article//
+// article-2 = Jonathan's article//
+// article-3 = Jeanette's article//
+// article-4 = Patrick's article//
+// article-5 = Kira's article//
+@use "variables" as v;
 .article-1,
 .article-2,
 .article-3,
@@ -12,9 +12,18 @@
 .article-5 {
   margin-bottom: 1.5rem;
 }
-
+.article-1 h1,
+.article-2 h1,
+.article-4 h1 {
+  color: v.$white;
+}
+.article-1 span,
+.article-2 span,
+.article-4 span {
+  color: v.$white;
+}
 .article-1 /*Daniel's article*/ {
-  background-color: $violet;
+  background-color: v.$violet;
   height: 25.75rem;
 }
 .article-1 h2 {
@@ -23,12 +32,12 @@
   margin-top: -5.56rem;
 }
 .article-1 .quote {
-  color: $white;
+  color: v.$white;
   opacity: 0.7;
 }
 
 .article-2 /*Jonathan's article*/ {
-  background-color: $very-dark-grayish-blue;
+  background-color: v.$very-dark-grayish-blue;
 }
 .article-2 h2,
 .article-4 h2 {
@@ -36,41 +45,49 @@
 }
 .article-2 .quote,
 .article-4 .quote {
-  color: $white;
+  color: v.$white;
   max-height: 15rem;
+  width:100%;
   margin-top: -1.125rem;
   margin-bottom: 2rem;
   padding-top: 0.3125rem;
   opacity: 0.7;
 }
 .article-3 /*Jeanette's article*/ {
-  background-color: $white;
+  background-color: v.$white;
 }
-.article-3 h1,
-.article-3 span,
-.article-5 h1,
-.article-5 span {
-  color: $very-dark-grayish-blue;
+.article-3 {
+  h1,
+  span {
+    color: v.$very-dark-grayish-blue;
+  }
 }
+.article-5 {
+  h1,
+  span {
+    color: v.$very-dark-grayish-blue;
+  }
+}
+
 .article-3 h2,
 .article-5 h2 {
-  color: $very-dark-grayish-blue;
+  color: v.$very-dark-grayish-blue;
 }
 .article-3 .quote,
 .article-5 .quote {
-  color: $very-dark-grayish-blue;
+  color: v.$very-dark-grayish-blue;
   opacity: 0.7;
   margin-top: -1.125rem;
   margin-bottom: 2rem;
   padding-top: 0.3125rem;
 }
 .article-4 /*Patrick's article*/ {
-  background-color: $very-dark-blackish-blue;
+  background-color: v.$very-dark-blackish-blue;
 }
 .article-4 h2 {
   width: 16rem;
 }
 
 .article-5 /*Kira's article*/ {
-  background-color: $white;
+  background-color: v.$white;
 }

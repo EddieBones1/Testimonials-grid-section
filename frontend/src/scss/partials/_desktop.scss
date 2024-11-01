@@ -1,0 +1,71 @@
+@media screen and (min-width: 87.5em/* 1400px */) {
+  body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    width: auto;
+    height: 100vh;
+    padding: 10.25rem 10.3125rem;
+  }
+  .article-1 {
+    display:grid;
+    margin-right: 1.8rem;
+    justify-items: start;
+    align-items:start;
+    grid-row-start: 1;
+    // margin-left: 11rem;
+    grid-column-start: 1;
+    margin-bottom: 1.8rem;
+  }
+  .article-3 {
+    margin-left: 11rem;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    transform: translateY(-54%);
+    margin-right:1.8rem;
+  }
+  .article-2 {
+    grid-column-start: 2;
+  }
+  .article-1,
+  .article-4 {
+    width: 33.8rem;
+    height: 17.6rem;
+  }
+  .article-2,
+  .article-3 {
+    width: 15.9rem;
+    height: 16.6rem;
+  }
+  // Daniel's article//
+  .article-1 h2 {
+    width: 29.75rem;
+  }
+  .quotation-mark {
+    left: 26.375rem;
+  }
+  .article-1 .quote {
+    width: 100%;
+  }
+  .article-4 h2 {
+    width: 100%;
+  }
+  .article-5 {
+    margin-left: 1.8rem;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    width: 12.9375rem;
+    height: 35.8rem;
+  }
+  .article-5 h2,
+  .article-5 .quote {
+    width: 11.9375rem;
+  }
+.article-4{
+  grid-column-start: 2;
+  transform: translate(0,-54%);
+}
+}
