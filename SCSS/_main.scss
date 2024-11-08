@@ -1,3 +1,4 @@
-@forward 'variables';
-@forward 'boilerplate';
-@forward 'fonts';
+@forward "./partials/variable";
+@forward "./partials/boilerplate";
+@forward "./partials/font";
+@forward "./partials/articles";

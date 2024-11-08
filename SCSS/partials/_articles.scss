@@ -1,0 +1,62 @@
+.article:nth-of-type(1) {
+  //Daniel's Article//
+  background-color: v.$violet;
+  position: relative;
+  h2 {
+    width: 16.4rem;
+    color: v.$white;
+    padding-bottom: 2.5rem;
+  }
+  .quote {
+    padding-bottom: 2rem;
+  }
+}
+.article:nth-of-type(2) {
+  //Johnathan's Article//
+  background-color: v.$grayish-blue;
+}
+h2 {
+  color: v.$white;
+  padding-bottom: 1rem;
+}
+.quote {
+  padding-bottom: 2rem;
+}
+.article:nth-of-type(3) {
+  // Jeanette's Article//
+  background-color: v.$white;
+  h1 {
+    color: v.$grayish-blue;
+  }
+  h2 {
+    width: 16.4rem;
+    color: v.$grayish-blue;
+  }
+  .quote {
+    color: v.$grayish-blue;
+  }
+  span {
+    color: v.$grayish-blue;
+  }
+}
+
+.article:nth-of-type(4) {
+  //Patrick's Article//
+  background-color: v.$blackish-blue;
+}
+.article:last-child {
+  //Kira's Article//
+  background-color: v.$white;
+  h1 {
+    color: v.$grayish-blue;
+  }
+  span {
+    color: v.$grayish-blue;
+  }
+  h2 {
+    color: v.$grayish-blue;
+  }
+  .quote {
+    color: v.$grayish-blue;
+  }
+}

@@ -1,8 +1,7 @@
-@use "./variable" as v;
-@use "./font" as f;
-@import "./boilerplate";
+@use "./partials/variable" as v;
+@use "./partials/font" as f;
+@import "./partials/boilerplate";
 body {
-  background-color: red;
   display: flex;
   padding: 4.4375rem 1.5rem;
   flex-direction: column;
@@ -14,14 +13,35 @@ body {
   display: grid;
   gap: 1.5rem;
 }
+.desktop-width {
+  width: 16.4rem;
+}
+.article {
+  //all articles//
+  border-radius: 0.5rem;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+  padding-inline: 2rem;
+}
 .profile-picture {
   width: 1.75rem;
   height: 1.75rem;
-  border-radius:1.75rem;
+  border-radius: 1.75rem;
+}
+.purple-border {
+  border: 2px solid v.$violet;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-direction: flex-start;
+  padding-top: 1.6rem;
 }
 h1 {
   // testimonial names//
   color: v.$white;
+  margin-left: 34px;
+  margin-top: -24px;
+  margin-bottom: 2px;
   font-size: v.$name-fs;
   @include f.barlow-medium;
   line-height: v.$name-lh;
@@ -29,6 +49,8 @@ h1 {
 span {
   // testimonial titles//
   color: v.$light-gray;
+  margin-left: 34px;
+  padding-bottom: 1.1rem;
   opacity: 50%;
   font-size: v.$span-fs;
   @include f.barlow-semibold;
@@ -38,17 +60,26 @@ h2 {
   @include f.barlow-semibold;
   font-size: v.$h2-fs;
   line-height: normal;
+  position: relative;
+  z-index: 1;
 }
 .quote {
-@include f.barlow-medium;
+  //paragraph text//
+  @include f.barlow-medium;
   font-size: v.$quote-fs;
-  opacity:70%;
+  opacity: 70%;
   line-height: v.$quote-lh;
-  color: v.$light-grayish-blue;
+  color: v.$light-gray;
 }
-
+.quotation-mark {
+  position: absolute;
+  left: 12.7rem;
+  right: 1.5rem;
+  top: 0.8px;
+  z-index: 0;
+}
 //articles//
-
+@import "./partials/articles";
 //attribution//
 .attribution {
   font-size: 11px;
