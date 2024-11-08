@@ -1,0 +1,11 @@
+@mixin barlow-medium {
+  font-family: "Barlow Semi Condensed", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin barlow-semibold {
+    font-family: "Barlow Semi Condensed", serif;
+    font-weight: 600;
+    font-style: normal;
+  }

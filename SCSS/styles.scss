@@ -1,0 +1,59 @@
+@use "./variable" as v;
+@use "./font" as f;
+@import "./boilerplate";
+body {
+  background-color: red;
+  display: flex;
+  padding: 4.4375rem 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // height: 100vh;
+}
+.testimonial-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.profile-picture {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius:1.75rem;
+}
+h1 {
+  // testimonial names//
+  color: v.$white;
+  font-size: v.$name-fs;
+  @include f.barlow-medium;
+  line-height: v.$name-lh;
+}
+span {
+  // testimonial titles//
+  color: v.$light-gray;
+  opacity: 50%;
+  font-size: v.$span-fs;
+  @include f.barlow-semibold;
+  line-height: v.$span-lh;
+}
+h2 {
+  @include f.barlow-semibold;
+  font-size: v.$h2-fs;
+  line-height: normal;
+}
+.quote {
+@include f.barlow-medium;
+  font-size: v.$quote-fs;
+  opacity:70%;
+  line-height: v.$quote-lh;
+  color: v.$light-grayish-blue;
+}
+
+//articles//
+
+//attribution//
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
