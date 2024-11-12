@@ -1,0 +1,55 @@
+@media screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+  }
+  .testimonial-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(
+      2,
+      18.75rem
+    ); //controls the spacing between rows//
+  }
+  .grid-column-span-2 {
+    grid-column: span 2;
+  }
+  .wide-width {
+    width: 29.75rem;
+  }
+  .short-width {
+    width: 11.9375rem;
+  }
+  .quotation-mark {
+    left: 361.2px;
+  }
+  .article:nth-of-type(1) {
+    //Daniel's Article//
+    width: 33.7rem;
+    height: 18rem;
+  }
+  .article:nth-of-type(2) {
+    //Johnathan's Article//
+    width: 15.9375rem;
+    height: 18rem;
+    grid-column: 3;
+  }
+  .article:nth-of-type(3) {
+    // Jeanette's Article//
+    width: 15.9375rem;
+    height: 16.625rem;
+    grid-column: 1;
+    grid-row-start: 2;
+  }
+  .article:nth-of-type(4) {
+    //Patrick's Article//
+    width: 33.75rem;
+    height: 16.625rem;
+    grid-row-start: 2;
+    grid-column: span 2;
+  }
+  .article:last-child {
+    //Kira's Article//
+    width: 15.9375rem;
+    height: 35.75rem;
+    grid-column: 4;
+  }
+}

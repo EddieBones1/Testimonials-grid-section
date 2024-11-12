@@ -1,0 +1,19 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "C:/Users/eddie/Downloads/testimonials-grid-section-main/testimonials-grid-section-main/images"
+	},
+	{
+		"path": "C:/Users/eddie/Downloads/testimonials-grid-section-main/testimonials-grid-section-main/.vscode"
+	},
+	{
+		"path": "C:/Users/eddie/Downloads/testimonials-grid-section-main/testimonials-grid-section-main/design"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Testimonials-grid-section"
+  }
+}
