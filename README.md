@@ -27,11 +27,12 @@ Users should be able to:
 **Desktop Screenshot**
 <img src="./screenshots/Desktop-Screenshot.png" style= "border: 2px solid black;">
 **Mobile Screenshot**
+
 <img src="./screenshots/Mobile-Screenshot.png" height=600 style="border: 2px solid black;">
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/testimonials-grid-section-32_hUxyEDp 
 - Live Site URL: https://eddiebones1.github.io/Testimonials-grid-section/
 
 ## My process
