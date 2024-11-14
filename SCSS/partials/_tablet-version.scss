@@ -1,0 +1,19 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .testimonial-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .quotation-mark {
+    left: 21.7rem;
+  }
+  .article {
+    width: 72%;
+  }
+  .article:nth-of-type(3) {
+    h2 {
+      width: auto;
+    }
+  }
+}
